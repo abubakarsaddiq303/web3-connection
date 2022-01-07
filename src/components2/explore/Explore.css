@@ -1,0 +1,61 @@
+.explore {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+  height: 80%;
+  justify-content: space-evenly;
+}
+.card {
+  width: 18%;
+  height: 22%;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.47);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgb(126, 24, 139);
+}
+.card-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.name {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.fName {
+  color: rgb(126, 24, 139);
+  padding: 5px;
+  font-weight: 800;
+}
+.lName {
+  color: rgb(126, 24, 139);
+  padding: 5px;
+  font-weight: 800;
+}
+.Id {
+  color: rgb(126, 24, 139);
+  padding: 5px;
+  font-weight: 800;
+}
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 31%;
+  }
+  .name {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card {
+  }
+}
