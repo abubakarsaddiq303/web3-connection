@@ -15,7 +15,6 @@ function Popup({ closePopup, transfer }) {
   return (
     <div className="popup-bg">
       <div className="popup">
-        <div className="popupcontainer"></div>
         <div className="btn-close">
           <p
             onClick={() => {

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="section3">
       <div className="footer-items">
         {/* <div className="Coinbase">
         <p>coinbase</p>

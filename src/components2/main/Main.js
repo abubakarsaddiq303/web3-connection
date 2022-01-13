@@ -1,12 +1,14 @@
 import React from "react";
 import "./Main2.css";
-import NFT from "../assets/NFT.jpg";
 import NFT2 from "../assets/NFT2.jpg";
-import NFT3 from "../assets/NFT3.jpg";
+import SCROLL from "../assets/down-arrow.png";
 import { Link } from "react-router-dom";
+import About from "../about/About";
+import Team from "../team/Team";
+
 function Main() {
   return (
-    <div className="main2">
+    <div className="main2" id="section1">
       <div className="container">
         <div className="row">
           <div className="col-1">
@@ -33,7 +35,7 @@ function Main() {
               <p>
                 We believe you have a unique taste, discover the
                 <br />
-                endless possibilities of the NFT world
+                endless possibilities of the ABverse
               </p>
             </div>
             <div className="btn-explore">
@@ -44,7 +46,15 @@ function Main() {
             </div>
           </div>
         </div>
+        <div className="scroll">
+          <a href="#section2">
+            <img src={SCROLL} />
+          </a>
+        </div>
       </div>
+
+      <About />
+      <Team />
     </div>
   );
 }

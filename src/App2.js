@@ -136,6 +136,7 @@ function App2() {
             element={<Explore nfts={nfts} loading={loading} />}
           />
         </Routes>
+
         <Footer />
       </div>
     </Router>

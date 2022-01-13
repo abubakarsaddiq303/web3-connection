@@ -39,10 +39,10 @@ function Navbar(props) {
   const mylocation = location.pathname.split("/");
   console.log("location", mylocation);
   return (
-    <div className="navbar2">
+    <div className="navbar2" id="section1">
       <div className="title">
         <a href="/">
-          <h1>NFT</h1>
+          <h1>ABverse</h1>
         </a>
       </div>
       <div className="nav-item">

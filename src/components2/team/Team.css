@@ -1,0 +1,67 @@
+.team {
+  width: 100%;
+  height: 100vh;
+}
+.team-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img3 {
+  width: 26%;
+  border-radius: 20px;
+  position: absolute;
+
+  object-fit: cover;
+  background: linear-gradient(to right, #61dafb, #ff6c6c);
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.my-Team {
+  margin-top: 11rem;
+}
+.my-Team h2 {
+  background: linear-gradient(to right, #ff6c6c, #61dafb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 72px;
+}
+.team-card {
+  display: contents;
+}
+.card-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 32%;
+}
+.card-name h1 {
+  color: white;
+}
+.scroll3 {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  width: 95%;
+}
+.scroll3 img {
+  width: 3rem;
+  transform: translate(0px, 0px) rotate(178deg);
+  filter: invert(1);
+}
+@media only screen and (max-width: 375px) {
+  .team-container {
+    justify-content: center;
+  }
+  .my-Team {
+    margin-top: 0;
+  }
+  .img3 {
+    width: 88%;
+  }
+}

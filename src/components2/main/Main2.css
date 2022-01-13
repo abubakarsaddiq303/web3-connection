@@ -1,15 +1,15 @@
 .Main2 {
-  width: 100vh;
-  height: 80vh;
+  width: 100%;
+  height: auto;
 }
 .container {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 .row {
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 83vh;
 }
 .col-1 {
   display: flex;
@@ -104,11 +104,11 @@
   --border-width: 4px;
   appearance: none;
   position: relative;
-  padding: 1em 2em;
+  padding: 1em 4rem;
   border: 0;
   background-color: #212121;
   font-family: "Roboto", Arial, "Segoe UI", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #fff;
   z-index: 2;
@@ -156,10 +156,144 @@
 .btn-explore button:active {
   --border-width: 5px;
 }
-@media only screen and (max-width: 375px) {
+.scroll {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+
+  width: 100%;
+}
+.scroll img {
+  width: 3rem;
+  filter: invert(1);
+}
+
+@media only screen and (max-width: 1024px) {
+  .col-1 {
+    display: flex;
+    justify-content: center;
+    width: 47%;
+  }
+
+  .NFT-img .img1 {
+    transform: translate(-144px, 81px) rotate(-28deg);
+
+    position: absolute;
+
+    width: 42%;
+    height: 42%;
+    object-fit: cover;
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .NFT-img .img2 {
+    transform: translate(-75px, 40px) rotate(-14deg);
+
+    position: absolute;
+
+    width: 42%;
+    height: 42%;
+    object-fit: cover;
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .NFT-img .img3 {
+    transform: rotate(0deg);
+
+    position: absolute;
+
+    width: 42%;
+    height: 42%;
+    object-fit: cover;
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .btn-explore button {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .row {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
+    flex-direction: column;
+  }
+  .col-1 {
+    width: 100%;
+    height: 47%;
+  }
+
+  .NFT-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    padding-left: 160px;
+  }
+  .NFT-img .img1 {
+    transform: translate(-144px, 81px) rotate(-28deg);
+
+    position: absolute;
+
+    width: 37%;
+    height: 68%;
+    object-fit: cover;
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .NFT-img .img2 {
+    transform: translate(-75px, 40px) rotate(-14deg);
+
+    position: absolute;
+
+    width: 37%;
+    height: 68%;
+    object-fit: cover;
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    border-radius: 20px;
+    padding: 4px;
+  }
+  .NFT-img .img3 {
+    transform: rotate(0deg);
+
+    position: absolute;
+
+    width: 37%;
+    height: 68%;
+    object-fit: cover;
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    border-radius: 20px;
+    padding: 4px;
+  }
+
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 42%;
+  }
+  .btn-explore {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    height: 89vh;
+  }
+  .row {
+    width: 100%;
+    height: 92%;
     flex-direction: column;
   }
   .col-1 {
@@ -182,7 +316,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 40%;
+    height: 60%;
   }
   .col-2_heading {
     height: 25%;
@@ -206,5 +340,8 @@
   .btn-explore {
     height: 25%;
     margin-top: 1rem;
+  }
+  .btn-explore button {
+    font-size: 16px;
   }
 }

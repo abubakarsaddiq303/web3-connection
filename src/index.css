@@ -12,6 +12,10 @@ body {
   background-position: fixed;
   background-size: cover;
 }
+html,
+body {
+  scroll-behavior: smooth;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -20,21 +24,21 @@ code {
 @media only screen and (max-width: 375px) {
   body {
     background-size: cover;
-    height: 100vh;
+    height: auto;
     background-position: center;
   }
 }
 @media only screen and (max-width: 768px) {
   body {
     background-size: cover;
-    height: 100vh;
+    height: auto;
     background-position: center;
   }
 }
 @media only screen and (max-width: 1024px) {
   body {
     background-size: cover;
-    height: 100vh;
+    height: auto;
     background-position: center;
   }
 }
