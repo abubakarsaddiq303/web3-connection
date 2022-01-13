@@ -54,14 +54,44 @@
   transform: translate(0px, 0px) rotate(178deg);
   filter: invert(1);
 }
+@media only screen and (max-width: 1024px) {
+  .my-Team h2 {
+    background: linear-gradient(to right, #61dafb, #ff6c6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .card-img {
+    height: 44%;
+  }
+  .img3 {
+    width: 76%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .team-container {
+    height: 100vh;
+  }
+  .my-Team {
+    margin-top: 7rem;
+  }
+  .card-img {
+    height: 59%;
+  }
+  .img3 {
+    width: 78%;
+  }
+}
 @media only screen and (max-width: 375px) {
   .team-container {
     justify-content: center;
   }
   .my-Team {
-    margin-top: 0;
+    margin-top: 75px;
   }
   .img3 {
     width: 88%;
+  }
+  .scroll3 {
+    padding-right: 1rem;
   }
 }

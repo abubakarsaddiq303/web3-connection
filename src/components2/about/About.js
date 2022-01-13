@@ -36,7 +36,8 @@ function About() {
         </div>
         <div className="about-pragraph">
           <p>
-            NFT is a virtual world platform and toolset that lets creators and
+            ABverse is a virtual world platform and toolset that lets creators
+            and
             <br /> communities create their own NFTs in a next generation
             metaverse.
           </p>
